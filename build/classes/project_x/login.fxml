@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: darkmagenta;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_x.LoginController">
+   <children>
+      <AnchorPane layoutX="350.0" layoutY="200.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Button fx:id="loginButton" layoutX="329.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToHome" opacity="0.78" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: darkmagenta;" text="Login" textFill="#e4d8d8" />
+            <PasswordField fx:id="passwordTF" layoutX="250.0" layoutY="211.0" prefHeight="54.0" prefWidth="226.0" promptText="password" />
+            <TextField fx:id="usernameTF" layoutX="251.0" layoutY="130.0" prefHeight="54.0" prefWidth="226.0" promptText="username" />
+            <FontAwesomeIconView glyphName="USER" layoutX="192.0" layoutY="164.0" size="30" />
+            <FontAwesomeIconView glyphName="KEY" layoutX="188.0" layoutY="248.0" size="30" />
+            <Label fx:id="loginLabel" layoutX="258.0" layoutY="372.0" prefHeight="18.0" prefWidth="226.0" wrapText="true" />
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
